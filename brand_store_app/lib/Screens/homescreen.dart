@@ -102,7 +102,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   Text(
                     "Explore",
-                    style: GoogleFonts.poppins(
+                    style: GoogleFonts.imprima(
                       fontSize: 36,
                       fontWeight: FontWeight.w400,
                       color: const Color.fromRGBO(13, 13, 14, 1),
@@ -110,7 +110,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   Text(
                     "Best trendy collection!",
-                    style: GoogleFonts.poppins(
+                    style: GoogleFonts.imprima(
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
                       color: const Color.fromRGBO(121, 119, 128, 1),
@@ -139,7 +139,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       alignment: Alignment.center,
                       child: Text(
                         categories[index]['name'],
-                        style: GoogleFonts.poppins(
+                        style: GoogleFonts.imprima(
                           fontSize: 16,
                           fontWeight: FontWeight.w400,
                           color: categories[index]['color'],
@@ -158,13 +158,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 left: 0.0,
               ),
               child: GridView.builder(
-                physics:
-                    const NeverScrollableScrollPhysics(), // Prevents scrolling
+                physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2, // 2 containers per row
-                  crossAxisSpacing: 6.0, // spacing between columns
-                  mainAxisSpacing: 2.0, // spacing between rows
+                  crossAxisCount: 2,
+                  crossAxisSpacing: 6.0,
+                  mainAxisSpacing: 2.0,
                 ),
                 itemCount: imgs.length,
                 itemBuilder: (context, index) {
@@ -229,7 +228,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           children: [
                             Text(
                               '\$${imgs[index]['price']}',
-                              style: GoogleFonts.poppins(
+                              style: GoogleFonts.imprima(
                                 fontSize: 16,
                                 fontWeight: FontWeight.w600,
                                 color: Colors.black,
@@ -237,7 +236,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                             Text(
                               imgs[index]['title']!,
-                              style: GoogleFonts.poppins(
+                              style: GoogleFonts.imprima(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                                 color: const Color.fromRGBO(121, 119, 128, 1),

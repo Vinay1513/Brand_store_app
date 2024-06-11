@@ -1,4 +1,5 @@
-import 'package:brand_store_app/Screens/homescreen.dart';
+import 'package:brand_store_app/Screens/cart.dart';
+//import 'package:brand_store_app/Screens/detailscreen.dart';
 //import 'package:brand_store_app/Screens/onboarding.dart';
 import 'package:flutter/material.dart';
 
@@ -11,10 +12,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Brand Store App',
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: CartScreen(),
     );
   }
 }
