@@ -1,6 +1,6 @@
-import 'package:brand_store_app/Screens/cart.dart';
+//import 'package:brand_store_app/Screens/cart.dart';
 //import 'package:brand_store_app/Screens/detailscreen.dart';
-//import 'package:brand_store_app/Screens/onboarding.dart';
+import 'package:brand_store_app/Screens/checkout.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Brand Store App',
       debugShowCheckedModeBanner: false,
-      home: CartScreen(),
+      home: CheckOutScreen(),
     );
   }
 }
